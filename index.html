@@ -1,857 +1,505 @@
-<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>NY Royal Builders Corp | Premier General Contractor &amp; Home Remodeling Queens NY</title>
-<meta content="NY Royal Builders Corp - Licensed general contractor in South Ozone Park, Queens, NY. Specializing in luxury home extensions, complete remodeling, framing, and interior renovations." name="description">
-<!-- Google Fonts: Plus Jakarta Sans -->
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-<!-- Tailwind CSS v3 CDN with forms and container queries -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              navy: '#0b1b3d',
-              dark: '#071126',
-              blue: '#16387c',
-              gold: '#c49a45',
-              'gold-light': '#fdf8ee',
-              light: '#f5f7fb',
-              accent: '#2563eb',
-              cyan: '#0ea5e9'
-            }
-          },
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-<!-- BEGIN: Custom Stylesheets Grouped by Purpose -->
-<style data-purpose="custom-typography">
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      color: #1e293b;
-      background-color: #ffffff;
-      -webkit-font-smoothing: antialiased;
-    }
-  </style>
-<style data-purpose="decorations-and-effects">
-    /* Subtle glow and decorative patterns */
-    .hero-glow-blob {
-      background: radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, rgba(11, 27, 61, 0) 70%);
-    }
-    .custom-scrollbar::-webkit-scrollbar {
-      height: 6px;
-      width: 6px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-track {
-      background: #f1f5f9;
-    }
-    .custom-scrollbar::-webkit-scrollbar-thumb {
-      background: #cbd5e1;
-      border-radius: 9999px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-      background: #94a3b8;
-    }
-  </style>
-<!-- END: Custom Stylesheets Grouped by Purpose -->
-</head>
-<body class="bg-white text-slate-800 antialiased selection:bg-brand-gold selection:text-brand-dark">
-<!-- BEGIN: Top Sticky Navigation Bar -->
-<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 transition-all duration-300" id="main-navigation">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex items-center justify-between h-20">
-<!-- Logo Section -->
-<a aria-label="NY Royal Builders Corp Home" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-brand-gold rounded-lg p-1" href="#hero">
-<img alt="NY Royal Builders Corp Logo" class="w-auto object-contain transition-transform duration-300 group-hover:scale-105 h-14" height="56" src="https://lh3.googleusercontent.com/aida/AEtjO1UUo9j8nKYkCGxxHNK7ciccqOW-6yUmEIrPvyHXoQ31JDpPTudnMuwuE2oqdeRTXimjxXDQkpT5dCSc60yhOiFXOQ4XHC3m4NhOnEnXsDqzIvGTxmc68JgKbEs2FSkCQ-UFIhS3_kmnCYmix0zyMVo1SbE2tIsxOKsHzeh5MC4D0ugoRdUiUz-rY1kAg-XiCYKsHLEycCSGAtm-wWMcmEletEEuil_YODETAM7snKTUQ6RpgM1DIs6qEyC9" width="210">
-</a>
-<!-- Desktop Navigation Links matching ProPlumbers structure -->
-<nav aria-label="Main Navigation" class="hidden lg:flex items-center space-x-1 xl:space-x-2">
-<a class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-brand-navy hover:bg-slate-50 rounded-lg transition-colors" href="#hero">Home</a>
-<a class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-brand-navy hover:bg-slate-50 rounded-lg transition-colors" href="#about">About</a>
-<a class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-brand-navy hover:bg-slate-50 rounded-lg transition-colors" href="#services">Services</a>
-<a class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-brand-navy hover:bg-slate-50 rounded-lg transition-colors" href="#process">Process</a>
-<a class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-brand-navy hover:bg-slate-50 rounded-lg transition-colors" href="#reviews">Reviews</a>
-<a class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-brand-navy hover:bg-slate-50 rounded-lg transition-colors" href="#pricing">Packages</a>
-<a class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-brand-navy hover:bg-slate-50 rounded-lg transition-colors" href="#contact">Contact</a>
-</nav>
-<!-- Right Action Pill Buttons matching ProPlumbers -->
-<div class="flex items-center gap-3">
-<!-- Active Phone Pill -->
-<a aria-label="Call NY Royal Builders Corp" class="inline-flex items-center gap-2 bg-brand-light text-brand-navy border border-slate-200 hover:border-brand-gold px-4 py-2 rounded-full text-xs sm:text-sm font-bold tracking-tight transition-all duration-200 shadow-sm hover:shadow" href="tel:+19173483465">
-<svg class="w-4 h-4 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-<span class="hidden sm:inline">+1 (917) 348-3465</span>
-<span class="sm:hidden">Call</span>
-</a>
-<!-- Primary CTA Button -->
-<a class="hidden md:inline-flex items-center justify-center bg-brand-navy hover:bg-brand-blue text-white text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 shadow-md hover:shadow-lg focus:ring-2 focus:ring-offset-2 focus:ring-brand-navy" href="#contact">
-            Request Estimate
-          </a>
-<!-- Mobile Hamburger Toggle -->
-<button aria-label="Toggle Navigation Menu" class="lg:hidden p-2 rounded-lg text-slate-600 hover:text-brand-navy hover:bg-slate-100" id="mobile-menu-btn" type="button">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-fixed-dim":"#93ccff","on-primary-fixed":"#001551","surface-container-highest":"#d3e4fe","tertiary-container":"#006194","on-primary-container":"#cad3ff","secondary":"#565e74","primary-container":"#1d4ed8","tertiary-fixed":"#cce5ff","on-primary":"#ffffff","surface-variant":"#d3e4fe","on-background":"#0b1c30","on-primary-fixed-variant":"#0039b5","on-secondary-container":"#5c647a","error":"#ba1a1a","on-tertiary":"#ffffff","outline":"#747686","on-error-container":"#93000a","surface-tint":"#2151da","surface-dim":"#cbdbf5","surface-container-low":"#eff4ff","on-secondary":"#ffffff","outline-variant":"#c4c5d7","primary-fixed-dim":"#b7c4ff","secondary-fixed":"#dae2fd","primary-fixed":"#dce1ff","on-tertiary-fixed":"#001d31","inverse-primary":"#b7c4ff","surface-bright":"#f8f9ff","on-tertiary-container":"#b2d9ff","error-container":"#ffdad6","surface-container-lowest":"#ffffff","primary":"#0037b0","on-secondary-fixed":"#131b2e","surface-container":"#e5eeff","on-secondary-fixed-variant":"#3f465c","on-surface-variant":"#434655","surface-container-high":"#dce9ff","secondary-container":"#dae2fd","tertiary":"#004870","secondary-fixed-dim":"#bec6e0","on-surface":"#0b1c30","surface":"#f8f9ff","inverse-on-surface":"#eaf1ff","inverse-surface":"#213145","on-error":"#ffffff","background":"#f8f9ff","on-tertiary-fixed-variant":"#004b73"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-mobile":"1rem","space-sm":"0.5rem","space-xl":"2.5rem",margin:"3rem","space-lg":"1.5rem","space-xs":"0.25rem","space-md":"1rem","margin-mobile":"1.25rem",gutter:"1.5rem"},fontFamily:{"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"]},fontSize:{"headline-sm":["22px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.015em",fontWeight:"700"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.025em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"headline-xl":["56px",{lineHeight:"64px",letterSpacing:"-0.025em",fontWeight:"800"}],"headline-xl-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"800"}],"title-lg":["18px",{lineHeight:"26px",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.05em",fontWeight:"700"}],"headline-md":["28px",{lineHeight:"36px",letterSpacing:"-0.015em",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between gap-space-md"><a href="#hero" class="flex items-center gap-space-sm flex-shrink-0 group"><img alt="NY Royal Builders Corp Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsneAgQF6AGUTPINiTfHLNz51VZsOdOFUu4rugTLXQvtQJquYLOVCj60KA9mWjNWkScgaRXLXsrf87ycnAsk_lgutvhbaJ4AUWj6Pj7ATUFJah4_DjW-CQ3DwxoAkt5otV8arK_lhEMfHVfxjE-ONUuQ7P1T2bMkGCfWa6UTfOyDISNoaanfYquR3L_53ocpfelXnWP0APIa5hHY8t3KaFi7eWcdbEmPYi9qo7eyeyPk_AakjzW7VtPQ"><div class="flex flex-col"><span class="font-title-lg text-title-lg text-on-surface tracking-tight font-bold">NY ROYAL BUILDERS</span><span class="font-label-sm text-label-sm text-secondary uppercase">Corp · NYC</span></div></a><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-label-lg"><a aria-current="page" class="transition-colors text-on-surface hover:text-primary font-label-lg" data-path="overview" href="#about">About</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="services" href="#services">Services</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="process" href="#process">Process</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="projects" href="#projects">Projects</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="reviews" href="#reviews">Reviews</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#contact">Contact</a></nav><div class="flex items-center gap-space-md flex-shrink-0"><a class="hidden sm:flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container hover:text-primary transition-all" href="tel:+19173483465"><span class="material-symbols-outlined text-primary text-[20px]">call</span><div class="flex flex-col text-left"><span class="font-label-sm text-label-sm text-secondary uppercase leading-none">Dispatch &amp; Consult</span><span class="font-label-lg text-label-lg text-on-surface font-semibold leading-none mt-space-xs">(917) 348-3465</span></div></a><a class="px-space-lg py-2.5 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg hover:bg-primary transition-all shadow-sm flex items-center gap-space-xs" data-path="quote-calculator" href="#contact"><span class="material-symbols-outlined text-[18px]">calculate</span><span class="">Get Free Estimate</span></a></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full bg-gradient-to-b from-inverse-surface via-inverse-surface to-background text-on-primary overflow-hidden" id="hero">
+<div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#1d4ed8_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter pt-12 pb-24 lg:pt-16 lg:pb-32 flex flex-col items-center text-center relative z-10">
+<!-- Status Badge -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-lowest/10 backdrop-blur-md mb-space-lg shadow-sm">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-primary-fixed-dim animate-pulse"></span>
+<span class="font-label-sm text-label-sm tracking-widest uppercase text-tertiary-fixed">NYC DOB Licensed &amp; Insured · Queens HQ</span>
 </div>
-</div>
-<!-- Mobile Dropdown Navigation Menu -->
-<div class="hidden lg:hidden border-t border-slate-100 py-4 bg-white" id="mobile-menu">
-<div class="flex flex-col space-y-2 px-2">
-<a class="mobile-nav-link px-3 py-2 text-base font-medium text-slate-800 hover:bg-slate-50 rounded-lg" href="#hero">Home</a>
-<a class="mobile-nav-link px-3 py-2 text-base font-medium text-slate-800 hover:bg-slate-50 rounded-lg" href="#about">About Us</a>
-<a class="mobile-nav-link px-3 py-2 text-base font-medium text-slate-800 hover:bg-slate-50 rounded-lg" href="#services">Services</a>
-<a class="mobile-nav-link px-3 py-2 text-base font-medium text-slate-800 hover:bg-slate-50 rounded-lg" href="#process">Our Process</a>
-<a class="mobile-nav-link px-3 py-2 text-base font-medium text-slate-800 hover:bg-slate-50 rounded-lg" href="#reviews">Customer Reviews</a>
-<a class="mobile-nav-link px-3 py-2 text-base font-medium text-slate-800 hover:bg-slate-50 rounded-lg" href="#pricing">Transparent Packages</a>
-<a class="mobile-nav-link px-3 py-2 text-base font-medium text-slate-800 hover:bg-slate-50 rounded-lg" href="#contact">Map &amp; Contact</a>
-<div class="pt-2">
-<a class="mobile-nav-link block text-center w-full bg-brand-navy text-white py-3 rounded-xl font-bold" href="#contact">Request Estimate</a>
-</div>
-</div>
-</div>
-</div>
-</header>
-<!-- END: Top Sticky Navigation Bar -->
-<main>
-<!-- BEGIN: Hero Section -->
-<section class="relative bg-gradient-to-b from-[#061430] via-[#0b1b3d] to-[#0d224d] text-white pt-16 pb-24 lg:pt-20 lg:pb-36 overflow-hidden" id="hero">
-<!-- Glow circles and subtle background grid -->
-<div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#93c5fd_1px,transparent_1px)] [background-size:24px_24px]"></div>
-<div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] hero-glow-blob pointer-events-none rounded-full blur-3xl"></div>
-<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-<!-- Top Trust Rating Pill (Matching ProPlumbers top badge) -->
-<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs sm:text-sm text-slate-200 mb-8 shadow-sm">
-<span class="font-semibold text-white">Excellent</span>
-<div class="flex items-center text-amber-400">
-<svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
-<svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
-<svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
-<svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
-<svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg>
-</div>
-<span class="text-slate-300">| Trusted Queens Master Builder</span>
-</div>
-<!-- Monumental Hero Headline -->
-<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight sm:leading-none">
-          Your go-to builders for <br class="hidden sm:inline">
-<span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-sky-100 to-amber-200">Quality and Care</span>
+<!-- Main Impact Headline -->
+<h1 class="font-headline-xl text-headline-xl max-w-4xl tracking-tight text-surface-container-lowest">
+        Precision Construction.<br><span class="text-tertiary-fixed-dim">Royal Craftsmanship.</span>
 </h1>
-<!-- Subheading -->
-<p class="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
-          Licensed &amp; insured General Contractor based in South Ozone Park, Queens. From ground-up structural construction and second-story additions to bespoke luxury kitchens and interior renovations.
-        </p>
-<!-- Dual CTA Buttons matching ProPlumbers -->
-<div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-<a class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-sky-200 hover:bg-sky-100 text-brand-dark font-bold text-sm tracking-wide transition-all duration-200 shadow-lg shadow-sky-500/20 hover:scale-105" href="#contact">
-            Order services
-          </a>
-<a class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-brand-dark/60 hover:bg-brand-dark border border-slate-700 text-white font-semibold text-sm transition-all duration-200 hover:border-slate-500" href="#about">
-            More about us
-          </a>
+<p class="font-body-lg text-body-lg text-surface-container-low max-w-2xl mt-space-md mb-space-xl">
+        Licensed NYC general contractor delivering custom home additions, structural framing, and luxury renovations built to exacting standards.
+      </p>
+<!-- CTA Cluster -->
+<div class="flex flex-wrap items-center justify-center gap-space-md mb-space-xl">
+<a class="px-space-xl py-3.5 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg shadow-lg hover:bg-primary transition-all flex items-center gap-space-xs" href="#contact">
+<span class="">Request Free Estimate</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="px-space-xl py-3.5 rounded-lg bg-surface-container-lowest/10 backdrop-blur-md text-surface-bright font-label-lg text-label-lg hover:bg-surface-container-lowest/20 transition-all flex items-center gap-space-xs" href="tel:+19173483465">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[18px]">call</span>
+<span class="">(917) 348-3465</span>
+</a>
 </div>
-<!-- Multi-Card Visual Feature Grid (1:1 with ProPlumbers layout composition) -->
-<div class="mt-16 sm:mt-20 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-5 items-center">
-<!-- Left Yellow/Gold Stat Card -->
-<div class="md:col-span-3 bg-amber-100 text-brand-dark p-6 sm:p-8 rounded-3xl text-left shadow-2xl relative overflow-hidden transform md:-rotate-1 hover:rotate-0 transition-transform duration-300 border border-amber-200">
-<div class="text-4xl sm:text-5xl font-black text-brand-navy tracking-tight">15+</div>
-<h2 class="mt-2 text-lg font-bold text-brand-dark leading-tight">Years of Royal Craftsmanship</h2>
-<p class="mt-2 text-xs sm:text-sm text-slate-700 leading-normal">Dedicated licensed general contracting with care across Queens, Brooklyn &amp; Long Island.</p>
-<div class="mt-4 flex items-center gap-1.5 text-xs font-semibold text-brand-navy">
-<span class="w-2 h-2 rounded-full bg-emerald-500"></span> NYC DOB Licensed &amp; Insured
-            </div>
+<!-- Trust Badges -->
+<div class="flex flex-wrap items-center justify-center gap-space-md text-surface-container-low text-body-sm font-body-sm">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest/5 px-space-md py-1.5 rounded-full">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">verified</span>
+<span class="">15+ Years Master Experience</span>
 </div>
-<!-- Center Feature Builder Portrait Card (Dominant Image) -->
-<div class="md:col-span-6 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20 bg-brand-navy relative group">
-<div class="aspect-[4/5] sm:aspect-[4/4.5] overflow-hidden">
-<img alt="Licensed New York general contractor and master builder on Queens construction site" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" loading="eager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWjs8WjsAXn_98JCCj4tCag-TQtWtouj4COkGB9uFa0NqRlrSO0oBKoDwPgDYh6IH7ZMA9jMbId8q9aWC0BFm5R_W6d2nlvzDtfzyA7hRh341KqSBrnPAVaboV02Ed1LaH2I97g655uN35Va-hKW1yVW43U1MMal5v091CViJ9b3Cp8g61VJ74hhApCt35ibFGzP5Vx4xGOR4tNN3taRYi9-59JQVaWyAWrZx8hyKkCUjQZo05iAQggQ">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest/5 px-space-md py-1.5 rounded-full">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">domain</span>
+<span class="">Queens &amp; 5 NYC Boroughs</span>
 </div>
-<!-- Overlay Tag -->
-<div class="absolute bottom-4 left-4 right-4 bg-brand-dark/85 backdrop-blur-md p-4 rounded-2xl border border-white/10 text-left flex items-center justify-between">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest/5 px-space-md py-1.5 rounded-full">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">schedule</span>
+<span class="">Open 7 Days (7 AM – 7 PM)</span>
+</div>
+</div>
+<!-- Hero Visual Composition -->
+<div class="relative w-full max-w-4xl mt-14">
+<div class="relative mx-auto max-w-lg lg:max-w-2xl rounded-xl overflow-hidden shadow-2xl bg-surface-container-highest">
+<img alt="Master General Contractor - NY Royal Builders Corp" class="w-full h-[460px] object-cover object-top hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AEtjO1WLG24Vflfd_HadpqzIrpvOOcFw_ftOmcFpgTKbfmGl2ag-UaNKT3XdTC-UOfP4lL4aEVIjSQPogKqo8jisVTl9kwuoLkseLF_lhZYcxGFlbvt4JcC0rVkFenEZ3SMaxt3Zggu-0v8w1MHQLatG4RKdBV5VQS9MpEwizeK-Y0c3opHSWnU9WJNXSxJRyauiuFoy5peC5iiV_amNvwyg90UbwqlI6-oP3J2rXVEcdwBm">
+<div class="absolute inset-x-0 bottom-0 p-space-md bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/50 to-transparent flex items-center justify-between text-left">
 <div>
-<p class="text-xs uppercase tracking-wider text-amber-300 font-semibold">Master General Contractor</p>
-<h3 class="text-sm sm:text-base font-bold text-white">NY Royal Builders Corp Team</h3>
+<p class="font-title-lg text-title-lg text-surface-bright leading-none">On-Site Master Leadership</p>
+<p class="font-label-sm text-label-sm text-primary-fixed-dim uppercase mt-1">Direct Field Supervision &amp; DOB Permitting</p>
 </div>
-<span class="px-3 py-1 rounded-full bg-sky-500/20 text-sky-300 border border-sky-400/30 text-xs font-semibold">Queens, NY</span>
-</div>
-</div>
-<!-- Right Yellow Stat Card -->
-<div class="md:col-span-3 bg-amber-100 text-brand-dark p-6 sm:p-8 rounded-3xl text-left shadow-2xl relative overflow-hidden transform md:rotate-1 hover:rotate-0 transition-transform duration-300 border border-amber-200">
-<div class="text-4xl sm:text-5xl font-black text-brand-navy tracking-tight">98%</div>
-<h2 class="mt-2 text-lg font-bold text-brand-dark leading-tight">Client Satisfaction Rating</h2>
-<p class="mt-2 text-xs sm:text-sm text-slate-700 leading-normal">Hundreds of satisfied NYC homeowners. Decades of collective field master builder experience.</p>
-<div class="mt-4 flex items-center gap-1.5 text-xs font-semibold text-brand-navy">
-<span class="w-2 h-2 rounded-full bg-emerald-500"></span> 7 Days a Week Availability
-            </div>
+<span class="px-space-md py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm tracking-wider uppercase">Active Dispatch</span>
 </div>
 </div>
+<!-- Metric Flank Left -->
+<div class="hidden md:flex absolute -left-6 top-1/3 -translate-y-1/2 p-space-lg rounded-xl bg-surface-container-lowest text-on-surface shadow-xl flex-col text-left max-w-[210px]">
+<span class="font-headline-lg text-headline-lg text-primary leading-none">15+</span>
+<span class="font-title-lg text-title-lg text-on-surface font-bold mt-1">Years Building</span>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Excellence in custom additions &amp; ground-up builds.</p>
 </div>
-</section>
-<!-- END: Hero Section -->
-<!-- BEGIN: Value Statement & Service Areas Section -->
-<section class="py-20 lg:py-28 bg-white border-b border-slate-100" id="about">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-<!-- ProPlumbers-style Highlighted Paragraph Block -->
-<p class="text-slate-400 text-base sm:text-lg font-medium leading-relaxed mb-3">
-          We pride ourselves on being your trusted local general contracting experts.
-        </p>
-<h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 leading-snug tracking-tight">
-          With over 15 years of experience serving South Ozone Park, Queens and NYC, our mission is to provide high-quality, reliable construction services that you can depend on, whether it's for your family home or commercial business.
-        </h2>
-<p class="mt-4 text-slate-400 text-base sm:text-lg font-medium leading-relaxed">
-          From full additions and framing to luxury kitchen remodeling and complete rebuilds, we handle every job with the utmost professionalism and royal care.
-        </p>
-<!-- Service Area Borough Pills / Logos -->
-<div class="mt-14 pt-10 border-t border-slate-100">
-<p class="text-xs font-bold tracking-widest text-slate-400 uppercase mb-6">Proudly Serving Five Boroughs &amp; Long Island</p>
-<div class="flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-slate-600 font-bold text-sm">
-<div class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200/80 shadow-sm">
-<span class="w-2.5 h-2.5 rounded-full bg-brand-navy"></span> South Ozone Park (HQ)
-            </div>
-<div class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200/80 shadow-sm">
-<span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span> Queens
-            </div>
-<div class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200/80 shadow-sm">
-<span class="w-2.5 h-2.5 rounded-full bg-sky-500"></span> Brooklyn
-            </div>
-<div class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200/80 shadow-sm">
-<span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span> Manhattan
-            </div>
-<div class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200/80 shadow-sm">
-<span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> Long Island (Nassau)
-            </div>
+<!-- Metric Flank Right -->
+<div class="hidden md:flex absolute -right-6 top-1/3 -translate-y-1/2 p-space-lg rounded-xl bg-surface-container-lowest text-on-surface shadow-xl flex-col text-left max-w-[210px]">
+<div class="flex items-center text-primary-container mb-1">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-headline-lg text-headline-lg text-primary leading-none">100%</span>
+<span class="font-title-lg text-title-lg text-on-surface font-bold mt-1">DOB Passed</span>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Zero code violations. Transparent fixed budgets.</p>
 </div>
 </div>
 </div>
 </section>
-<!-- END: Value Statement & Service Areas Section -->
-<!-- BEGIN: Comprehensive Services Section -->
-<section class="py-24 bg-brand-light" id="services">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<!-- Section Title & Subtitle matching ProPlumbers -->
-<div class="text-center max-w-3xl mx-auto mb-16">
-<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Our Comprehensive Construction Services</h2>
-<p class="mt-4 text-slate-600 text-sm sm:text-base leading-relaxed">
-            Turnkey general contracting solutions designed for residential homeowners, multi-family investors, and commercial property owners across New York.
+<!-- TRUST & VERIFIED METRICS BAR -->
+<section class="w-full bg-surface-container-low py-space-xl" id="about">
+<div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-lg text-center">
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col items-center">
+<span class="font-headline-lg text-headline-lg text-primary">15+</span>
+<span class="font-title-lg text-title-lg text-on-surface mt-1">Years in NYC</span>
+<span class="font-body-sm text-body-sm text-secondary">Verified track record</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col items-center">
+<span class="font-headline-lg text-headline-lg text-primary">450+</span>
+<span class="font-title-lg text-title-lg text-on-surface mt-1">Completed Builds</span>
+<span class="font-body-sm text-body-sm text-secondary">Residential &amp; Commercial</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col items-center">
+<span class="font-headline-lg text-headline-lg text-primary">100%</span>
+<span class="font-title-lg text-title-lg text-on-surface mt-1">DOB Compliance</span>
+<span class="font-body-sm text-body-sm text-secondary">All permits cleared</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col items-center">
+<span class="font-headline-lg text-headline-lg text-primary">7 Days</span>
+<span class="font-title-lg text-title-lg text-on-surface mt-1">7 AM – 7 PM</span>
+<span class="font-body-sm text-body-sm text-secondary">Immediate project intake</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CORE SERVICES -->
+<section class="w-full py-space-xl lg:py-28 bg-surface" id="services">
+<div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter">
+<div class="flex flex-col items-center text-center mb-space-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-2">Architectural Craftsmanship</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Our Core Services</h2>
+<p class="font-body-md text-body-md text-secondary max-w-xl mt-2">Comprehensive general contracting and engineering services across all five NYC boroughs.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Service 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[28px]">foundation</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">Structural Framing &amp; Extensions</h3>
+<p class="font-body-sm text-body-sm text-secondary">Ground-up builds, second-story structural additions, load-bearing removal, and heavy timber-steel framing.</p>
+</div>
+<a class="mt-space-lg inline-flex items-center text-primary font-label-lg text-label-lg group-hover:translate-x-1 transition-transform" href="#contact">
+<span class="">Consult Project</span>
+<span class="material-symbols-outlined text-[16px] ml-1">chevron_right</span>
+</a>
+</div>
+<!-- Service 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[28px]">countertops</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">Luxury Remodeling</h3>
+<p class="font-body-sm text-body-sm text-secondary">Bespoke custom kitchen redesigns, Italian marble bathrooms, and complete high-end interior architecture.</p>
+</div>
+<a class="mt-space-lg inline-flex items-center text-primary font-label-lg text-label-lg group-hover:translate-x-1 transition-transform" href="#contact">
+<span class="">Consult Project</span>
+<span class="material-symbols-outlined text-[16px] ml-1">chevron_right</span>
+</a>
+</div>
+<!-- Service 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[28px]">handyman</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">Masonry &amp; Concrete</h3>
+<p class="font-body-sm text-body-sm text-secondary">Poured structural foundations, NYC brownstone brickwork, concrete stoops, paving, and waterproofing.</p>
+</div>
+<a class="mt-space-lg inline-flex items-center text-primary font-label-lg text-label-lg group-hover:translate-x-1 transition-transform" href="#contact">
+<span class="">Consult Project</span>
+<span class="material-symbols-outlined text-[16px] ml-1">chevron_right</span>
+</a>
+</div>
+<!-- Service 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[28px]">roofing</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">Roofing &amp; Siding</h3>
+<p class="font-body-sm text-body-sm text-secondary">Commercial flat roofing, architectural shingles, seamless metal facades, and high-efficiency insulation systems.</p>
+</div>
+<a class="mt-space-lg inline-flex items-center text-primary font-label-lg text-label-lg group-hover:translate-x-1 transition-transform" href="#contact">
+<span class="">Consult Project</span>
+<span class="material-symbols-outlined text-[16px] ml-1">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ON-SITE EXCELLENCE & BLUEPRINT SUPERVISION SHOWCASE -->
+<section class="w-full bg-inverse-surface text-surface-bright py-space-xl lg:py-24">
+<div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Content -->
+<div class="lg:col-span-5 flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed-dim mb-2">Daily Field Precision</span>
+<h2 class="font-headline-lg text-headline-lg text-surface-container-lowest tracking-tight">On-Site Master Supervision. Daily DOB Compliance.</h2>
+<p class="font-body-md text-body-md text-surface-container-high mt-4 mb-6">
+            We never sub out oversight. Our senior project engineers manage every phase on the ground—ensuring NYC Building Code alignment, safe work practices, and clean daily operations.
           </p>
-</div>
-<!-- 3-Column Service Feature Cards -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Service Card 1 -->
-<div class="bg-white rounded-3xl p-8 border border-slate-200/70 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div class="space-y-space-md">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-[22px] mt-0.5">check_circle</span>
 <div>
-<h3 class="text-xl font-bold text-slate-900 mb-6 group-hover:text-brand-navy transition-colors">
-                Structural Framing &amp; Extensions
-              </h3>
-<!-- Circular Blue Icon Illustration (ProPlumbers style) -->
-<div class="my-6 mx-auto w-36 h-36 rounded-full bg-sky-100 flex items-center justify-center relative overflow-hidden group-hover:scale-105 transition-transform duration-300">
-<svg class="w-16 h-16 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-</svg>
-<div class="absolute inset-0 bg-sky-200/20 rounded-full"></div>
+<h4 class="font-title-lg text-title-lg text-surface-bright">Permit Sign-offs &amp; Approvals</h4>
+<p class="font-body-sm text-body-sm text-surface-dim">Full handling of architectural drawings, DOB expedite filings, and sign-offs.</p>
 </div>
-<p class="text-slate-600 text-sm leading-relaxed mb-6">
-                Complete structural wood and steel framing, second-story dormers, ground-level extensions, and foundation reinforced carpentry conforming to strict NYC Building Codes.
-              </p>
 </div>
-<a class="inline-flex items-center text-sm font-bold text-slate-800 hover:text-brand-navy group-hover:translate-x-1 transition-all" href="#contact">
-              View services <span class="ml-2 font-normal text-slate-400 group-hover:text-brand-navy">→</span>
-</a>
-</div>
-<!-- Service Card 2 -->
-<div class="bg-white rounded-3xl p-8 border border-slate-200/70 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-[22px] mt-0.5">check_circle</span>
 <div>
-<h3 class="text-xl font-bold text-slate-900 mb-6 group-hover:text-brand-navy transition-colors">
-                Luxury Kitchen &amp; Bath Remodeling
-              </h3>
-<!-- Circular Blue Icon Illustration -->
-<div class="my-6 mx-auto w-36 h-36 rounded-full bg-sky-100 flex items-center justify-center relative overflow-hidden group-hover:scale-105 transition-transform duration-300">
-<svg class="w-16 h-16 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-</svg>
-<div class="absolute inset-0 bg-sky-200/20 rounded-full"></div>
-</div>
-<p class="text-slate-600 text-sm leading-relaxed mb-6">
-                Custom marble countertops, bespoke millwork, architectural lighting, luxury tile installation, and premium plumbing fixtures installed with master precision.
-              </p>
-</div>
-<a class="inline-flex items-center text-sm font-bold text-slate-800 hover:text-brand-navy group-hover:translate-x-1 transition-all" href="#contact">
-              View services <span class="ml-2 font-normal text-slate-400 group-hover:text-brand-navy">→</span>
-</a>
-</div>
-<!-- Service Card 3 -->
-<div class="bg-white rounded-3xl p-8 border border-slate-200/70 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-<div>
-<h3 class="text-xl font-bold text-slate-900 mb-6 group-hover:text-brand-navy transition-colors">
-                Masonry, Roofing &amp; Exterior Siding
-              </h3>
-<!-- Circular Blue Icon Illustration -->
-<div class="my-6 mx-auto w-36 h-36 rounded-full bg-sky-100 flex items-center justify-center relative overflow-hidden group-hover:scale-105 transition-transform duration-300">
-<svg class="w-16 h-16 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-</svg>
-<div class="absolute inset-0 bg-sky-200/20 rounded-full"></div>
-</div>
-<p class="text-slate-600 text-sm leading-relaxed mb-6">
-                Brick pointing, concrete paving, brownstone restoration, durable architectural shingles, metal roofs, and premium weather-shield insulation for lasting durability.
-              </p>
-</div>
-<a class="inline-flex items-center text-sm font-bold text-slate-800 hover:text-brand-navy group-hover:translate-x-1 transition-all" href="#contact">
-              View services <span class="ml-2 font-normal text-slate-400 group-hover:text-brand-navy">→</span>
-</a>
+<h4 class="font-title-lg text-title-lg text-surface-bright">Fixed Milestones &amp; Live Reports</h4>
+<p class="font-body-sm text-body-sm text-surface-dim">Daily project updates and weekly milestones guarantee transparent schedule progress.</p>
 </div>
 </div>
 </div>
-</section>
-<!-- END: Comprehensive Services Section -->
-<!-- BEGIN: Streamlined 3-Step Process Section -->
-<section class="py-24 bg-white" id="process">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-<!-- Left Column Headline & Context -->
-<div class="lg:col-span-5 lg:sticky lg:top-28">
-<span class="text-xs font-extrabold uppercase tracking-widest text-brand-gold bg-amber-50 px-3 py-1 rounded-md border border-amber-200">Systematic Reliability</span>
-<h2 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-              Streamlined building process ensuring efficient and reliable service.
-            </h2>
-<p class="mt-6 text-slate-600 text-base leading-relaxed">
-              We eliminate the stress of New York renovation projects with structured project timelines, clear milestone reports, and dedicated master supervision on every job site.
-            </p>
-<div class="mt-8 p-6 rounded-2xl bg-slate-50 border border-slate-200">
-<p class="text-sm font-semibold text-slate-800">Need urgent advice or permit questions?</p>
-<p class="text-xs text-slate-500 mt-1">Our construction directors answer questions 7 days a week.</p>
-<a class="mt-3 inline-flex items-center text-brand-navy font-bold text-sm hover:underline" href="tel:+19173483465">
-                Call +1 (917) 348-3465 →
-              </a>
-</div>
-</div>
-<!-- Right Column Numbered Process Steps (01, 02, 03 exactly matching template) -->
-<div class="lg:col-span-7 space-y-10">
-<!-- Step 01 -->
-<div class="flex items-start gap-6 p-6 sm:p-8 rounded-3xl bg-slate-50/70 border border-slate-100 hover:border-slate-200 transition-all duration-200">
-<div class="flex-shrink-0 w-14 h-14 rounded-full bg-sky-100 text-sky-700 font-extrabold text-lg flex items-center justify-center shadow-sm">
-                01
-              </div>
-<div>
-<h3 class="text-xl font-bold text-slate-900">Schedule Consultation &amp; Site Assessment</h3>
-<p class="mt-2 text-slate-600 text-sm sm:text-base leading-relaxed">
-                  We schedule an on-site consultation at your home or property in Queens or surrounding NYC boroughs to review architectural plans, structural feasibility, and project objectives.
-                </p>
-</div>
-</div>
-<!-- Step 02 -->
-<div class="flex items-start gap-6 p-6 sm:p-8 rounded-3xl bg-slate-50/70 border border-slate-100 hover:border-slate-200 transition-all duration-200">
-<div class="flex-shrink-0 w-14 h-14 rounded-full bg-sky-100 text-sky-700 font-extrabold text-lg flex items-center justify-center shadow-sm">
-                02
-              </div>
-<div>
-<h3 class="text-xl font-bold text-slate-900">Transparent Scope &amp; Fixed-Cost Proposal</h3>
-<p class="mt-2 text-slate-600 text-sm sm:text-base leading-relaxed">
-                  No hidden surprises. You receive an itemized, transparent budget outlining materials, labor schedules, DOB permit procurement, and precise phase milestones.
-                </p>
-</div>
-</div>
-<!-- Step 03 -->
-<div class="flex items-start gap-6 p-6 sm:p-8 rounded-3xl bg-slate-50/70 border border-slate-100 hover:border-slate-200 transition-all duration-200">
-<div class="flex-shrink-0 w-14 h-14 rounded-full bg-sky-100 text-sky-700 font-extrabold text-lg flex items-center justify-center shadow-sm">
-                03
-              </div>
-<div>
-<h3 class="text-xl font-bold text-slate-900">Precision Construction &amp; Royal Handover</h3>
-<p class="mt-2 text-slate-600 text-sm sm:text-base leading-relaxed">
-                  Our master tradesmen complete the build with daily site cleanliness, regular progress updates, final punch-list walkthrough, and full manufacturer &amp; workmanship warranties.
-                </p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- END: Streamlined 3-Step Process Section -->
-<!-- BEGIN: High-Impact Callout Banner -->
-<section class="py-12 bg-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<!-- Dark Navy Banner matching template composition with right imagery -->
-<div class="relative bg-gradient-to-r from-brand-dark via-brand-navy to-[#112d69] rounded-3xl overflow-hidden shadow-2xl p-8 sm:p-12 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-8">
-<div class="max-w-xl text-left z-10">
-<h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight leading-snug">
-              Contact us today for your construction and renovation needs
-            </h2>
-<p class="mt-4 text-slate-300 text-sm sm:text-base leading-relaxed">
-              Serving South Ozone Park and the entire New York City area. From framing to final coats of paint, we make your dream property a reality.
-            </p>
 <div class="mt-8">
-<a class="inline-flex items-center px-8 py-3.5 rounded-full bg-sky-200 hover:bg-sky-100 text-brand-dark font-bold text-sm tracking-wide transition-all shadow-md hover:scale-105" href="#contact">
-                Get in touch
-              </a>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-3 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg hover:bg-primary transition-all" href="tel:+19173483465">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span class="">Speak with a Master Builder</span>
+</a>
 </div>
 </div>
-<!-- Worksite Tools & Plumbing / Framing Visual (Matches callout visual element in ProPlumbers) -->
-<div class="relative w-full lg:w-1/2 flex justify-center lg:justify-end">
-<div class="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 max-w-md w-full">
-<img alt="Master construction builders inspecting blueprints on worksite in New York" class="w-full h-64 sm:h-72 object-cover object-center" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfU7gEPrb_9I5nDzNeRC21F2NuaERr0Zh6qLIEQptw8PrJcdJrMCaK8qXAPLf2leVs9Rqvl3SskX7wnb9NOXSH8zS-qTaLKcvvJiiuwlZZ9oO920rjCVAIQEDFGjIi2Rw6i3yzxFpkVgw-nlX8PJDeDM2dtW9nxkb7uyTOAtDM9xWRA08MNF5-Mm8lreUrgkPUIZp9qggsbSZLhbkluTnGRnnudk60b5W_f-2Rz6LlpJVEdu4qhJe7BQ">
-<div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent"></div>
-<div class="absolute bottom-3 left-4 right-4 text-white text-xs font-medium">
-                Blueprint precision inspection on site in Queens, NY
-              </div>
+<!-- Right Visual Mosaic -->
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="rounded-xl overflow-hidden shadow-xl bg-surface-container-highest">
+<img alt="Builders reviewing blueprints on site Queens NY" class="w-full h-72 sm:h-80 object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1UQIQprNzQK_1pa-i9J4T6x4cR74gEKMyEjBmUbTwxaOvxjbJwnlpyPhUSG1Y0h-X4xvtjOpof2H_5fWkcKsRV0x1BEcPF3wsiPtA_Fbh6DLpD8HKAUhDBIbFnXICMz2lJIDdbZLFHP_s1dP0LHj5cscA7A0q6jaVok8cLlxNNyS3LHYbtZQy_w9Zv6k7y1jCyovmrg5_ocHoSQohKAmD6s3f2_xi0I15SaPrbjtq-ZCA">
+<div class="p-space-sm bg-inverse-surface/80 text-center">
+<span class="font-label-sm text-label-sm text-surface-container-low">Blueprint Review · South Ozone Park</span>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden shadow-xl bg-surface-container-highest">
+<img alt="General contractor framing site New York" class="w-full h-72 sm:h-80 object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1WTo7xB2-bdfFEUGi1xc6sLQNKOzAg--Nto686fBS75yxThrkYqoRWIUNLOUThnfVQiv78Eyn8Mu10408GDmp2WQ6zUfJbSgx6uQezJA4J85eOedMC5WT-DW0M5hp8PynO1l_BFG681cc90r-x80Nd8UkwmQ_xpNsFR5ss6lPh2TztIEZgG7S1pwY9W7caZ6hlxb2AHjyirtAH0W2ecx3f-IWxIjVNUfWvpuX1hlGYxzg">
+<div class="p-space-sm bg-inverse-surface/80 text-center">
+<span class="font-label-sm text-label-sm text-surface-container-low">Structural Addition · Queens County</span>
+</div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- END: High-Impact Callout Banner -->
-<!-- BEGIN: Customer Testimonials Section -->
-<section class="py-24 bg-white border-b border-slate-100" id="reviews">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center max-w-3xl mx-auto mb-16">
-<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            See what our satisfied customers are saying about us
-          </h2>
-<p class="mt-4 text-slate-600 text-sm sm:text-base">
-            Real feedback from local homeowners across South Ozone Park, Howard Beach, Jamaica, and Forest Hills.
-          </p>
+<!-- 3-STEP PROCESS -->
+<section class="w-full py-space-xl lg:py-28 bg-surface-container-lowest" id="process">
+<div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter">
+<div class="flex flex-col items-center text-center mb-space-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-2">Transparent Execution</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Streamlined 3-Step Process</h2>
+<p class="font-body-md text-body-md text-secondary max-w-xl mt-2">Zero ambiguity. Guaranteed budgets. Professional handoff.</p>
 </div>
-<!-- Reviews Grid matching layout cards in ProPlumbers -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<!-- Testimonial 1 -->
-<div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-slate-200 shadow-sm flex flex-col justify-between">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg relative">
+<!-- Step 1 -->
+<div class="p-space-lg rounded-xl bg-surface shadow-sm relative flex flex-col">
+<span class="font-headline-xl text-headline-xl text-surface-container-highest font-extrabold leading-none mb-4">01</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Site Consultation &amp; Assessment</h3>
+<p class="font-body-sm text-body-sm text-secondary">We inspect your property in South Ozone Park or anywhere in NYC to assess structural feasibility, architectural drawings, and DOB permit scope.</p>
+</div>
+<!-- Step 2 -->
+<div class="p-space-lg rounded-xl bg-surface shadow-sm relative flex flex-col">
+<span class="font-headline-xl text-headline-xl text-surface-container-highest font-extrabold leading-none mb-4">02</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Fixed-Cost Proposal</h3>
+<p class="font-body-sm text-body-sm text-secondary">You receive a clear, itemized proposal detailing material specifications, milestone timelines, and fixed costs. No hidden fees or surprises.</p>
+</div>
+<!-- Step 3 -->
+<div class="p-space-lg rounded-xl bg-surface shadow-sm relative flex flex-col">
+<span class="font-headline-xl text-headline-xl text-surface-container-highest font-extrabold leading-none mb-4">03</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Precision Build &amp; Handover</h3>
+<p class="font-body-sm text-body-sm text-secondary">Our master crews execute with rigorous daily quality controls, prompt city inspections, full punch-list clearance, and royal handover.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FEATURED WORKS GALLERY -->
+<section class="w-full py-space-xl lg:py-28 bg-surface-container-low" id="projects">
+<div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-4">
 <div>
-<div class="flex items-center justify-between mb-4">
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-brand-navy text-white font-bold flex items-center justify-center text-sm">
-                    MR
-                  </div>
-<div>
-<h3 class="font-bold text-slate-900 text-sm">Mike R.</h3>
-<p class="text-xs text-slate-500">South Ozone Park, NY</p>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-2 block">Proven Craft</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Featured Projects</h2>
+</div>
+<a class="inline-flex items-center text-primary font-label-lg text-label-lg hover:underline" href="#contact">
+<span class="">Discuss your vision</span>
+<span class="material-symbols-outlined text-[18px] ml-1">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Project 1 -->
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="relative overflow-hidden h-72 sm:h-96">
+<img alt="Luxury modern residential kitchen and home renovation in New York" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AEtjO1Xb6Aes3oXB6a6blPQTm4suLwpyPD_O-_LL9NdIuhdVHGqwDqh9Xmt5nRC-J65dNwmmbzQ9CIkopmL_bov3aHAIYLeU8CO4VlrTiig8W0Du7KVgzcEzWHNwf_uQeEdoXYYJd8dEd2Yri4iYeWIQtj_hDae7qIb3Nj_RBHjcultM5nd3tLs8iosX59KbiRuj97RRUFt67JVOtUoVI6BcxhfOi37Kj21IQdcYqEzIPQAXoQ">
+<span class="absolute top-4 right-4 bg-primary text-on-primary font-label-sm text-label-sm px-space-md py-1 rounded-full uppercase">Interior Architecture</span>
+</div>
+<div class="p-space-lg">
+<h3 class="font-title-lg text-title-lg text-on-surface mb-1">Luxury Kitchen &amp; Ground Floor Remodel</h3>
+<p class="font-body-sm text-body-sm text-secondary">Custom marble waterfall island, recessed smart illumination, and open-plan structural beam integration.</p>
 </div>
 </div>
-<div class="flex items-center text-amber-500 text-xs font-bold gap-1">
-<span class="">★</span> 5.0 Rating
-                </div>
+<!-- Project 2 -->
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="relative overflow-hidden h-72 sm:h-96">
+<img alt="Luxury home framing addition construction in Queens New York" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AEtjO1WTo7xB2-bdfFEUGi1xc6sLQNKOzAg--Nto686fBS75yxThrkYqoRWIUNLOUThnfVQiv78Eyn8Mu10408GDmp2WQ6zUfJbSgx6uQezJA4J85eOedMC5WT-DW0M5hp8PynO1l_BFG681cc90r-x80Nd8UkwmQ_xpNsFR5ss6lPh2TztIEZgG7S1pwY9W7caZ6hlxb2AHjyirtAH0W2ecx3f-IWxIjVNUfWvpuX1hlGYxzg">
+<span class="absolute top-4 right-4 bg-surface-container-highest text-primary font-label-sm text-label-sm px-space-md py-1 rounded-full uppercase">Full Addition</span>
 </div>
-<p class="text-slate-600 text-sm leading-relaxed italic">
-                "We had major structural framing work and an entire kitchen remodel done by NY Royal Builders. Their crew was on time every morning, courteous, and kept the job site impeccably clean. Truly a five-star experience from start to finish!"
-              </p>
-</div>
-<div class="mt-6 pt-4 border-t border-slate-200/60 flex items-center justify-between">
-<span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-200/70 text-slate-700">Kitchen Remodel</span>
-<span class="text-xs text-slate-400">Verified Client</span>
-</div>
-</div>
-<!-- Testimonial 2 -->
-<div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-slate-200 shadow-sm flex flex-col justify-between">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-brand-navy text-white font-bold flex items-center justify-center text-sm">
-                    JT
-                  </div>
-<div>
-<h3 class="font-bold text-slate-900 text-sm">John Thompson</h3>
-<p class="text-xs text-slate-500">Howard Beach, Queens</p>
-</div>
-</div>
-<div class="flex items-center text-amber-500 text-xs font-bold gap-1">
-<span class="">★</span> 5.0 Rating
-                </div>
-</div>
-<p class="text-slate-600 text-sm leading-relaxed italic">
-                "I'm very impressed with the professionalism and expertise. From the initial consultation to the final city inspection, everything was handled with care and precision. They took time to explain the process and answered all my questions."
-              </p>
-</div>
-<div class="mt-6 pt-4 border-t border-slate-200/60 flex items-center justify-between">
-<span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-200/70 text-slate-700">Home Extension</span>
-<span class="text-xs text-slate-400">Verified Client</span>
-</div>
-</div>
-<!-- Testimonial 3 -->
-<div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-slate-200 shadow-sm flex flex-col justify-between">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-brand-navy text-white font-bold flex items-center justify-center text-sm">
-                    ER
-                  </div>
-<div>
-<h3 class="font-bold text-slate-900 text-sm">Emily Rodriguez</h3>
-<p class="text-xs text-slate-500">Forest Hills, Queens</p>
-</div>
-</div>
-<div class="flex items-center text-amber-500 text-xs font-bold gap-1">
-<span class="">★</span> 5.0 Rating
-                </div>
-</div>
-<p class="text-slate-600 text-sm leading-relaxed italic">
-                "Finding an honest contractor in NYC is tough. NY Royal Builders Corp delivered on time and within budget. Their transparent pricing was accurate, and the custom carpentry work in our living area exceeded expectations!"
-              </p>
-</div>
-<div class="mt-6 pt-4 border-t border-slate-200/60 flex items-center justify-between">
-<span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-200/70 text-slate-700">Full Interior Renovation</span>
-<span class="text-xs text-slate-400">Verified Client</span>
+<div class="p-space-lg">
+<h3 class="font-title-lg text-title-lg text-on-surface mb-1">Multi-Story Residential Framing Extension</h3>
+<p class="font-body-sm text-body-sm text-secondary">Complete 2nd-story timber and steel structural expansion, new architectural rooflines, and DOB compliance.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- END: Customer Testimonials Section -->
-<!-- BEGIN: Transparent Pricing & Service Packages Section -->
-<section class="py-24 bg-brand-light" id="pricing">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center max-w-3xl mx-auto mb-16">
-<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Transparent pricing for quality construction services you can trust.
-          </h2>
-<p class="mt-4 text-slate-600 text-sm sm:text-base">
-            Clear estimations and itemized milestones with zero hidden fees. We work with you to maximize value and architectural elegance.
-          </p>
+<!-- CLIENT REVIEWS -->
+<section class="w-full py-space-xl lg:py-28 bg-surface" id="reviews">
+<div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter">
+<div class="flex flex-col items-center text-center mb-space-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-2">Verified Testimonials</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Client Trust Built on Quality</h2>
 </div>
-<!-- 3 Cards with photography & pricing exactly matching ProPlumbers cards -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Package Card 1 -->
-<div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200/70 transition-all duration-300 flex flex-col justify-between group">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Review 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
 <div>
-<div class="h-56 overflow-hidden">
-<img alt="Completed luxury kitchen and living room interior" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp8qfhfo2dx71NXGkkAoXNkrAERQF4T9IASIm_1UewCpiDrJirILJE0BTXcHs4sjMo3atBtk13yhjfy1ZJvyQfeuI2TYhC4CbkuXniGV6pSyz3LULusZii2_LGN2lDDzh8yr9IwB6VEX1vZHTxvgCmwP2ADv4-mVwMo4_4x4kjgtBdc3z0v75ySMR4FD9U4Q4DHY7xFydzdnZ25cjqfE29x6gmCL4Mssya5pFUFpAGWMzfA0-ikt35nQ">
+<div class="flex items-center text-primary-container mb-space-md">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<div class="p-6 sm:p-8">
-<h3 class="text-xl font-bold text-slate-900 mb-2">Luxury Kitchen &amp; Bath Remodel</h3>
-<p class="text-slate-500 text-xs sm:text-sm mb-4">Complete demolition, new plumbing, electrical, custom quartz/marble, designer cabinetry and fixtures.</p>
-<div class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Starting scope from:</div>
-<div class="text-2xl font-black text-brand-navy mt-1">$14,500 <span class="text-xs font-normal text-slate-500">USD</span></div>
+<p class="font-body-md text-body-md text-on-surface italic">
+              "NY Royal Builders handled our full second-story extension seamlessly. Passed all DOB inspections on the first run. The crew was always on time."
+            </p>
 </div>
-</div>
-<div class="px-6 pb-6 sm:px-8 sm:pb-8">
-<a class="inline-flex items-center text-sm font-bold text-slate-900 hover:text-brand-navy group-hover:translate-x-1 transition-all" href="#contact">
-                Book now <span class="ml-2 font-normal text-slate-400 group-hover:text-brand-navy">→</span>
-</a>
-</div>
-</div>
-<!-- Package Card 2 -->
-<div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200/70 transition-all duration-300 flex flex-col justify-between group">
+<div class="mt-space-lg pt-space-sm flex items-center justify-between">
 <div>
-<div class="h-56 overflow-hidden">
-<img alt="Custom home building framing and exterior construction in New York" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv800uo6iktlYoFdu4JekyPLowyTtcmbQj55gpJVmz5Acrbs2NOMKhAcm2N2Hxdtqzrf9UhpyXq1wHuRgXOHJBYlITrZZ6Ar6XzTuoHg-yzSs-f3tfnr0ugQdbapYPIXJLx2aJaN7_fhkTtPNW-qM_uQlBe42uC2LKKFVoyuXPVLi4nQ9JHLjh9m_IXDm7Psb-1vqMROKKoZJVp_5JcqArFWvJFyi2jsgoVpn9XKbCHnBnGiixNtvCdg">
+<p class="font-title-lg text-title-lg text-on-surface font-semibold">David K.</p>
+<p class="font-body-sm text-body-sm text-secondary">South Ozone Park, Queens</p>
 </div>
-<div class="p-6 sm:p-8">
-<h3 class="text-xl font-bold text-slate-900 mb-2">Home Extension &amp; Structural Additions</h3>
-<p class="text-slate-500 text-xs sm:text-sm mb-4">Second story extensions, rear bump-outs, structural beam replacement, foundation underpinning and framing.</p>
-<div class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Starting scope from:</div>
-<div class="text-2xl font-black text-brand-navy mt-1">$28,000 <span class="text-xs font-normal text-slate-500">USD</span></div>
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
 </div>
 </div>
-<div class="px-6 pb-6 sm:px-8 sm:pb-8">
-<a class="inline-flex items-center text-sm font-bold text-slate-900 hover:text-brand-navy group-hover:translate-x-1 transition-all" href="#contact">
-                Book now <span class="ml-2 font-normal text-slate-400 group-hover:text-brand-navy">→</span>
-</a>
-</div>
-</div>
-<!-- Package Card 3 -->
-<div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200/70 transition-all duration-300 flex flex-col justify-between group">
+<!-- Review 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
 <div>
-<div class="h-56 overflow-hidden">
-<img alt="Master construction builders framing a modern residence" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfU7gEPrb_9I5nDzNeRC21F2NuaERr0Zh6qLIEQptw8PrJcdJrMCaK8qXAPLf2leVs9Rqvl3SskX7wnb9NOXSH8zS-qTaLKcvvJiiuwlZZ9oO920rjCVAIQEDFGjIi2Rw6i3yzxFpkVgw-nlX8PJDeDM2dtW9nxkb7uyTOAtDM9xWRA08MNF5-Mm8lreUrgkPUIZp9qggsbSZLhbkluTnGRnnudk60b5W_f-2Rz6LlpJVEdu4qhJe7BQ">
+<div class="flex items-center text-primary-container mb-space-md">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<div class="p-6 sm:p-8">
-<h3 class="text-xl font-bold text-slate-900 mb-2">Exterior Siding, Masonry &amp; Roofing</h3>
-<p class="text-slate-500 text-xs sm:text-sm mb-4">Complete exterior overhaul, architectural shingles, brick tuckpointing, stucco finishes and insulated siding.</p>
-<div class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Starting scope from:</div>
-<div class="text-2xl font-black text-brand-navy mt-1">$9,500 <span class="text-xs font-normal text-slate-500">USD</span></div>
+<p class="font-body-md text-body-md text-on-surface italic">
+              "Their kitchen and masonry work exceeded all expectations. Transparent fixed billing with zero change-order games. True craftsmen."
+            </p>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center justify-between">
+<div>
+<p class="font-title-lg text-title-lg text-on-surface font-semibold">Maria S.</p>
+<p class="font-body-sm text-body-sm text-secondary">Howard Beach, Queens</p>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
 </div>
 </div>
-<div class="px-6 pb-6 sm:px-8 sm:pb-8">
-<a class="inline-flex items-center text-sm font-bold text-slate-900 hover:text-brand-navy group-hover:translate-x-1 transition-all" href="#contact">
-                Book now <span class="ml-2 font-normal text-slate-400 group-hover:text-brand-navy">→</span>
-</a>
+<!-- Review 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center text-primary-container mb-space-md">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+              "Fast dispatch and reliable structural solutions. They rebuilt our foundation footing and new deck in record time before the winter freeze."
+            </p>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center justify-between">
+<div>
+<p class="font-title-lg text-title-lg text-on-surface font-semibold">Robert R.</p>
+<p class="font-body-sm text-body-sm text-secondary">Jamaica, Queens</p>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- END: Transparent Pricing & Service Packages Section -->
-<!-- BEGIN: Educational Insights / Blog Section -->
-<section class="py-24 bg-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center max-w-3xl mx-auto mb-10">
-<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Explore our blog for expert building tips and insights
-          </h2>
-<p class="mt-4 text-slate-600 text-sm sm:text-base">
-            Helpful construction knowledge, Queens zoning requirements, and luxury home design inspiration.
-          </p>
-<div class="mt-6">
-<a class="inline-flex px-6 py-2.5 rounded-full bg-sky-100 text-sky-800 font-bold text-xs hover:bg-sky-200 transition-colors" href="#contact">
-              View more blog
-            </a>
+<!-- CONTACT & QUEENS LOCATION MAP -->
+<section class="w-full py-space-xl lg:py-28 bg-surface-container-low" id="contact">
+<div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter">
+<div class="flex flex-col items-center text-center mb-space-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-2">Request Estimate</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Visit Our Queens Office or Call Us</h2>
+<p class="font-body-md text-body-md text-secondary max-w-lg mt-2">Open 7 days a week from 7:00 AM to 7:00 PM for all building and renovation inquiries.</p>
 </div>
-</div>
-<!-- Blog Cards Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-12">
-<!-- Blog Card 1 -->
-<article class="flex flex-col sm:flex-row bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:border-slate-200 transition-all duration-300">
-<div class="sm:w-2/5 h-48 sm:h-auto overflow-hidden">
-<img alt="Kitchen and living space renovation tips" class="w-full h-full object-cover" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp8qfhfo2dx71NXGkkAoXNkrAERQF4T9IASIm_1UewCpiDrJirILJE0BTXcHs4sjMo3atBtk13yhjfy1ZJvyQfeuI2TYhC4CbkuXniGV6pSyz3LULusZii2_LGN2lDDzh8yr9IwB6VEX1vZHTxvgCmwP2ADv4-mVwMo4_4x4kjgtBdc3z0v75ySMR4FD9U4Q4DHY7xFydzdnZ25cjqfE29x6gmCL4Mssya5pFUFpAGWMzfA0-ikt35nQ">
-</div>
-<div class="p-6 sm:w-3/5 flex flex-col justify-between">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Estimate Form -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-space-xl rounded-xl shadow-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Get Your Free Consultation</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-space-lg">Submit your project details and a master builder will get in touch today.</p>
+<form class="space-y-space-md" id="estimate-form" onsubmit="event.preventDefault(); document.getElementById('form-success').classList.remove('hidden'); this.reset();">
 <div>
-<div class="flex items-center justify-between text-xs text-slate-500 mb-2">
-<span class="font-bold text-brand-navy uppercase tracking-wider">Maintenance &amp; Permits</span>
-<span class="">10 minutes</span>
-</div>
-<h3 class="text-base font-bold text-slate-900 leading-snug">Essential NYC DOB Building Permits for Home Extensions</h3>
-<p class="mt-2 text-xs sm:text-sm text-slate-500 line-clamp-3">
-                  Understand what permits are mandated by New York City Department of Buildings before breaking ground on your residential addition.
-                </p>
-</div>
-<a class="mt-4 text-xs font-bold text-brand-navy hover:underline inline-flex items-center" href="#contact">
-                View more details <span class="ml-1">→</span>
-</a>
-</div>
-</article>
-<!-- Blog Card 2 -->
-<article class="flex flex-col sm:flex-row bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:border-slate-200 transition-all duration-300">
-<div class="sm:w-2/5 h-48 sm:h-auto overflow-hidden">
-<img alt="Framing and timber for residential builds" class="w-full h-full object-cover" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv800uo6iktlYoFdu4JekyPLowyTtcmbQj55gpJVmz5Acrbs2NOMKhAcm2N2Hxdtqzrf9UhpyXq1wHuRgXOHJBYlITrZZ6Ar6XzTuoHg-yzSs-f3tfnr0ugQdbapYPIXJLx2aJaN7_fhkTtPNW-qM_uQlBe42uC2LKKFVoyuXPVLi4nQ9JHLjh9m_IXDm7Psb-1vqMROKKoZJVp_5JcqArFWvJFyi2jsgoVpn9XKbCHnBnGiixNtvCdg">
-</div>
-<div class="p-6 sm:w-3/5 flex flex-col justify-between">
-<div>
-<div class="flex items-center justify-between text-xs text-slate-500 mb-2">
-<span class="font-bold text-brand-navy uppercase tracking-wider">Construction Guide</span>
-<span class="">8 minutes</span>
-</div>
-<h3 class="text-base font-bold text-slate-900 leading-snug">Must-Have Structural Features for Modern Family Homes</h3>
-<p class="mt-2 text-xs sm:text-sm text-slate-500 line-clamp-3">
-                  Key architectural framing, insulation materials, and moisture-barrier techniques that ensure your home stands strong for generations.
-                </p>
-</div>
-<a class="mt-4 text-xs font-bold text-brand-navy hover:underline inline-flex items-center" href="#contact">
-                View more details <span class="ml-1">→</span>
-</a>
-</div>
-</article>
-</div>
-</div>
-</section>
-<!-- END: Educational Insights / Blog Section -->
-<!-- BEGIN: Interactive Location Map & Contact Section -->
-<section class="py-24 bg-slate-50 border-t border-slate-200" id="contact">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center max-w-3xl mx-auto mb-16">
-<span class="text-xs font-bold uppercase tracking-widest text-brand-navy bg-white px-4 py-1.5 rounded-full border border-slate-200 shadow-sm">Get In Touch</span>
-<h2 class="mt-4 text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Visit Our Queens Office or Request an Estimate</h2>
-<p class="mt-3 text-slate-600 text-sm sm:text-base">We are open 7 days a week from 7:00 AM to 7:00 PM for all your building inquiries.</p>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-<!-- Contact Details & Form Card -->
-<div class="lg:col-span-6 bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
-<div>
-<h3 class="text-xl font-bold text-slate-900 mb-6">Send an Inquiry or Schedule a Site Visit</h3>
-<!-- Direct Contact Information Badges -->
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-<div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
-<div class="text-xs text-slate-400 font-bold uppercase">Direct Phone</div>
-<a class="mt-1 block text-sm font-extrabold text-brand-navy hover:underline" href="tel:+19173483465">+1 (917) 348-3465</a>
-<p class="text-[11px] text-slate-500">Available 7am - 7pm Mon-Sun</p>
-</div>
-<div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
-<div class="text-xs text-slate-400 font-bold uppercase">Headquarters</div>
-<p class="mt-1 text-sm font-bold text-slate-800 leading-snug">114-50 134th St, South Ozone Park, NY 11420</p>
-<p class="text-[11px] text-slate-500">Plus Code: M5JR+9X Queens, NY</p>
-</div>
-</div>
-<!-- Interactive Form -->
-<form class="space-y-4" id="estimate-form" onsubmit="event.preventDefault(); alert('Thank you! NY Royal Builders Corp has received your request. We will contact you shortly.');">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<div>
-<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1" for="full-name">Your Name</label>
-<input class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-navy focus:border-brand-navy text-sm" id="full-name" placeholder="John Doe" required="" type="text">
+<label class="block font-label-md text-label-md text-on-surface mb-1">Your Full Name</label>
+<input class="w-full px-space-md py-3 rounded-lg bg-surface text-on-surface focus:outline-none focus:ring-2 focus:ring-primary text-body-sm" placeholder="John Doe" required="" type="text">
 </div>
 <div>
-<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1" for="phone-number">Phone Number</label>
-<input class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-navy focus:border-brand-navy text-sm" id="phone-number" placeholder="(917) 000-0000" required="" type="tel">
+<label class="block font-label-md text-label-md text-on-surface mb-1">Phone Number</label>
+<input class="w-full px-space-md py-3 rounded-lg bg-surface text-on-surface focus:outline-none focus:ring-2 focus:ring-primary text-body-sm" placeholder="+1 (917) 000-0000" required="" type="tel">
 </div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <div>
-<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1" for="service-type">Service Needed</label>
-<select class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-navy focus:border-brand-navy text-sm text-slate-700" id="service-type">
-<option>Home Extension / Addition</option>
-<option>Kitchen &amp; Bath Remodeling</option>
-<option>Framing &amp; Carpentry</option>
-<option>Masonry &amp; Siding</option>
-<option>Full House Gut Renovation</option>
-<option>Commercial Construction</option>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Service Type</label>
+<select class="w-full px-space-md py-3 rounded-lg bg-surface text-on-surface focus:outline-none focus:ring-2 focus:ring-primary text-body-sm">
+<option>Structural Framing &amp; Additions</option>
+<option>Luxury Kitchen &amp; Bath Remodeling</option>
+<option>Masonry, Foundation &amp; Concrete</option>
+<option>Commercial / Residential Roofing</option>
+<option>DOB Permit &amp; Violation Clearance</option>
 </select>
 </div>
 <div>
-<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1" for="borough-location">Property Location</label>
-<input class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-navy focus:border-brand-navy text-sm" id="borough-location" placeholder="e.g. South Ozone Park / Queens" type="text">
+<label class="block font-label-md text-label-md text-on-surface mb-1">Project Details &amp; Scope</label>
+<textarea class="w-full px-space-md py-3 rounded-lg bg-surface text-on-surface focus:outline-none focus:ring-2 focus:ring-primary text-body-sm" placeholder="Tell us about the property, square footage, timeline..." rows="3"></textarea>
 </div>
-</div>
-<div>
-<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1" for="project-details">Project Details / Scope</label>
-<textarea class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-navy focus:border-brand-navy text-sm" id="project-details" placeholder="Tell us about your square footage, timeline, or specific plans..." rows="3"></textarea>
-</div>
-<button class="w-full py-3.5 px-6 rounded-xl bg-brand-navy hover:bg-brand-blue text-white font-bold text-sm tracking-wide shadow-md hover:shadow-lg transition-all duration-200" type="submit">
-                  Submit Estimate Request
-                </button>
+<button class="w-full py-3.5 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg hover:bg-primary transition-all shadow-md flex items-center justify-center gap-space-xs" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span class="">Submit Estimate Request</span>
+</button>
 </form>
+<div class="hidden mt-4 p-space-md rounded-lg bg-surface-container text-primary font-body-sm text-body-sm flex items-center gap-space-xs" id="form-success">
+<span class="material-symbols-outlined">check_circle</span>
+<span class="">Thank you! Your inquiry has been dispatched. A project manager will contact you promptly.</span>
 </div>
-<div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-<span class="">Licensed General Contractor</span>
-<span class="">Fully Insured &amp; Bonded NYC</span>
 </div>
-</div>
-<!-- Google Maps Frame & Location Card -->
-<div class="lg:col-span-6 bg-white p-4 rounded-3xl border border-slate-200 shadow-sm flex flex-col">
-<div class="w-full h-96 sm:h-[460px] rounded-2xl overflow-hidden relative border border-slate-100">
-<!-- Responsive Google Maps Embed of South Ozone Park Queens 11420 -->
-<iframe allowfullscreen="" class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=114-50%20134th%20St,%20South%20Ozone%20Park,%20NY%2011420&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" title="NY Royal Builders Corp Location Map">
-</iframe>
-</div>
-<!-- Map Footer with Quick Action Links -->
-<div class="p-4 mt-2 flex flex-col sm:flex-row items-center justify-between gap-3">
+<!-- Business Details & Map -->
+<div class="lg:col-span-6 flex flex-col gap-space-lg">
+<!-- Information Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">location_on</span>
 <div>
-<h4 class="font-bold text-sm text-slate-900">NY Royal Builders Corp Headquarters</h4>
-<p class="text-xs text-slate-500">114-50 134th St, South Ozone Park, NY 11420</p>
+<span class="font-label-sm text-label-sm text-secondary uppercase block">HQ Address</span>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">114-50 134th St</p>
+<p class="font-body-sm text-body-sm text-secondary">South Ozone Park, NY 11420</p>
+<span class="inline-block mt-1 font-label-sm text-label-sm text-primary">Plus Code: M5JR+9X</span>
 </div>
-<a class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-brand-light hover:bg-slate-200 text-brand-navy text-xs font-bold border border-slate-200 transition-colors" href="https://maps.app.goo.gl/Cr3zsaPi3MwcK4PV8" rel="noopener noreferrer" target="_blank">
-<svg class="w-4 h-4 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-                Open in Google Maps
-              </a>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">schedule</span>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase block">Working Hours</span>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">Monday – Sunday</p>
+<p class="font-body-sm text-body-sm text-secondary">7:00 AM – 7:00 PM EST</p>
+<span class="inline-block mt-1 font-label-sm text-label-sm text-primary font-bold">Open 7 Days</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-md flex flex-wrap items-center justify-between gap-2">
+<a class="inline-flex items-center gap-space-xs text-primary font-title-lg text-title-lg font-bold hover:underline" href="tel:+19173483465">
+<span class="material-symbols-outlined">call</span>
+<span class="">+1 (917) 348-3465</span>
+</a>
+<span class="font-label-sm text-label-sm bg-surface-container px-space-md py-1 rounded-full text-secondary">General Contractor Corp</span>
+</div>
+</div>
+<!-- Embedded Map -->
+<div class="w-full h-80 rounded-xl overflow-hidden shadow-md bg-surface-container">
+<iframe class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=114-50%20134th%20St,%20South%20Ozone%20Park,%20NY%2011420&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" title="NY Royal Builders Corp Location">
+</iframe>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- END: Interactive Location Map & Contact Section -->
-</main>
-<!-- BEGIN: Main Footer matching ProPlumbers 1:1 columns -->
-<footer class="bg-brand-dark text-slate-400 text-xs sm:text-sm pt-20 pb-12 border-t border-slate-800">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<!-- Footer Top Columns -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16 border-b border-slate-800">
-<!-- Column 1: Brand Info -->
-<div class="lg:col-span-2 space-y-4">
-<a aria-label="NY Royal Builders Corp Home" class="inline-block focus:outline-none" href="#hero">
-<!-- White Filtered/Light Variant Logo Container -->
-<div class="bg-white p-3 rounded-xl inline-block">
-<img alt="NY Royal Builders Corp" class="w-auto h-14" height="56" src="https://lh3.googleusercontent.com/aida/AEtjO1UUo9j8nKYkCGxxHNK7ciccqOW-6yUmEIrPvyHXoQ31JDpPTudnMuwuE2oqdeRTXimjxXDQkpT5dCSc60yhOiFXOQ4XHC3m4NhOnEnXsDqzIvGTxmc68JgKbEs2FSkCQ-UFIhS3_kmnCYmix0zyMVo1SbE2tIsxOKsHzeh5MC4D0ugoRdUiUz-rY1kAg-XiCYKsHLEycCSGAtm-wWMcmEletEEuil_YODETAM7snKTUQ6RpgM1DIs6qEyC9" width="180">
-</div>
-</a>
-<p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm mt-3">
-            Premier residential and commercial general contracting company based in South Ozone Park, Queens. Dedicated to royal quality, structural integrity, and architectural refinement.
-          </p>
-<div class="pt-2 text-xs text-slate-300 space-y-1">
-<p class=""><strong class="text-white">Address:</strong> 114-50 134th St, South Ozone Park, NY 11420</p>
-<p class=""><strong class="text-white">Hours:</strong> 7:00 AM – 7:00 PM (Monday – Sunday)</p>
-<p class=""><strong class="text-white">Phone:</strong> <a class="hover:text-amber-400 text-white font-semibold underline" href="tel:+19173483465">+1 (917) 348-3465</a></p>
-</div>
-<!-- Social Badges -->
-<div class="flex items-center space-x-3 pt-3">
-<a aria-label="Google Maps Listing" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-brand-gold hover:text-brand-dark flex items-center justify-center transition-colors text-white" href="https://maps.app.goo.gl/Cr3zsaPi3MwcK4PV8" rel="noopener noreferrer" target="_blank">
-<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"></path></svg>
-</a>
-<a aria-label="Phone consultation" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-brand-blue flex items-center justify-center transition-colors text-white" href="#contact">
-<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.5-5.2-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.4-1.1-.6-2.3-.6-3.5 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1z"></path></svg>
-</a>
-</div>
-</div>
-<!-- Column 2: Main Pages -->
-<div>
-<h4 class="text-white font-bold text-sm tracking-wide mb-4">Main page</h4>
-<ul class="space-y-2.5">
-<li class=""><a class="hover:text-white transition-colors" href="#hero">Home</a></li>
-<li class=""><a class="hover:text-white transition-colors" href="#about">About Us</a></li>
-<li class=""><a class="hover:text-white transition-colors" href="#services">Services</a></li>
-<li class=""><a class="hover:text-white transition-colors" href="#process">Process</a></li>
-<li class=""><a class="hover:text-white transition-colors" href="#contact">Contact</a></li>
-</ul>
-</div>
-<!-- Column 3: Inner Pages / Scope -->
-<div>
-<h4 class="text-white font-bold text-sm tracking-wide mb-4">Services</h4>
-<ul class="space-y-2.5">
-<li class=""><a class="hover:text-white transition-colors" href="#services">Home Additions</a></li>
-<li class=""><a class="hover:text-white transition-colors" href="#services">Kitchen &amp; Bath</a></li>
-<li class=""><a class="hover:text-white transition-colors" href="#services">Structural Framing</a></li>
-<li class=""><a class="hover:text-white transition-colors" href="#services">Exterior Masonry</a></li>
-<li class=""><a class="hover:text-white transition-colors" href="#pricing">Cost Estimates</a></li>
-</ul>
-</div>
-<!-- Column 4: Utility & Legal -->
-<div>
-<h4 class="text-white font-bold text-sm tracking-wide mb-4">Service Area</h4>
-<ul class="space-y-2.5">
-<li class=""><span class="text-slate-300">South Ozone Park</span></li>
-<li class=""><span class="text-slate-400">Queens County</span></li>
-<li class=""><span class="text-slate-400">Brooklyn, NY</span></li>
-<li class=""><span class="text-slate-400">Long Island (Nassau)</span></li>
-<li class=""><span class="text-slate-400">Manhattan Remodeling</span></li>
-</ul>
-</div>
-</div>
-<!-- Footer Bottom Copyright & Made Badge -->
-<div class="mt-8 pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-<p class="">© 2026 NY Royal Builders Corp. All rights reserved. Licensed NYC General Contractor.</p>
-<div class="flex items-center gap-2">
-<span class="">Powered by NY Royal Builders Corp • High Standards Construction</span>
-</div>
-</div>
-</div>
-</footer>
-<!-- END: Main Footer -->
-<!-- BEGIN: Interactive Vanilla JavaScript -->
-<script data-purpose="mobile-menu-interactivity">
-    // Mobile navigation toggle functionality
-    const mobileBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
-
-    if (mobileBtn && mobileMenu) {
-      mobileBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
-
-      mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
+<!-- Interactive Smooth Scrolling & Nav Sync -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const targetId = this.getAttribute('href');
+          if (targetId && targetId !== '#') {
+            const targetEl = document.querySelector(targetId);
+            if (targetEl) {
+              e.preventDefault();
+              targetEl.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          }
         });
       });
-    }
-  </script>
-<script data-purpose="smooth-scrolling-offsets">
-    // Ensure accurate offset scrolling with sticky header
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-        
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          e.preventDefault();
-          const headerOffset = 80;
-          const elementPosition = targetElement.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
+      // Hook Header App Shell Navigation Links
+      const navLinks = {
+        'overview': '#about',
+        'services': '#services',
+        'process': '#process',
+        'projects': '#projects',
+        'reviews': '#reviews',
+        'contact': '#contact',
+        'quote-calculator': '#contact'
+      };
+
+      Object.entries(navLinks).forEach(([path, hash]) => {
+        document.querySelectorAll(`header a[data-path="${path}"], footer a[data-path="${path}"]`).forEach(link => {
+          link.setAttribute('href', hash);
+          link.addEventListener('click', (e) => {
+            const el = document.querySelector(hash);
+            if (el) {
+              e.preventDefault();
+              el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
           });
-        }
+        });
       });
     });
   </script>
-<!-- END: Interactive Vanilla JavaScript -->
-
+</div></main><footer class="w-full bg-surface-container-low"><div class="w-full max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="NY Royal Builders Corp Logo" class="h-10 w-auto object-contain rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsneAgQF6AGUTPINiTfHLNz51VZsOdOFUu4rugTLXQvtQJquYLOVCj60KA9mWjNWkScgaRXLXsrf87ycnAsk_lgutvhbaJ4AUWj6Pj7ATUFJah4_DjW-CQ3DwxoAkt5otV8arK_lhEMfHVfxjE-ONUuQ7P1T2bMkGCfWa6UTfOyDISNoaanfYquR3L_53ocpfelXnWP0APIa5hHY8t3KaFi7eWcdbEmPYi9qo7eyeyPk_AakjzW7VtPQ"><div class="flex flex-col"><span class="font-title-lg text-title-lg text-on-surface tracking-tight">NY ROYAL BUILDERS</span><span class="font-label-sm text-label-sm text-secondary uppercase">Corp · Lic. &amp; Insured NYC</span></div></div><p class="font-body-sm text-body-sm text-on-surface-variant">Premier general contracting and mechanical structural engineering firm serving South Ozone Park, Queens, and the five boroughs of New York City.</p><div class="flex flex-wrap items-center gap-space-xs pt-space-xs"><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container text-primary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">verified</span><span class="">NYC DOB Licensed</span></div><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container text-primary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">shield</span><span class="">Fully Insured &amp; Bonded</span></div></div></div><div class="flex flex-col gap-space-md"><span class="font-title-lg text-title-lg text-on-surface">Headquarters</span><div class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px] mt-0.5">location_on</span><div class="flex flex-col"><span class="font-body-sm text-body-sm text-on-surface font-semibold">South Ozone Park Yard</span><span class="font-body-sm text-body-sm text-on-surface-variant">114-50 134th St</span><span class="font-body-sm text-body-sm text-on-surface-variant">South Ozone Park, NY 11420</span></div></div><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px]">call</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-secondary uppercase">24/7 Response Line</span><a class="font-body-sm text-body-sm text-on-surface font-semibold hover:text-primary transition-colors" href="tel:+19173483465">+1 917-348-3465</a></div></div></div><div class="flex flex-col gap-space-md"><span class="font-title-lg text-title-lg text-on-surface">Operating Hours</span><div class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px] mt-0.5">schedule</span><div class="flex flex-col"><span class="font-body-sm text-body-sm text-on-surface font-semibold">Monday – Sunday</span><span class="font-body-sm text-body-sm text-on-surface-variant">7:00 AM – 7:00 PM EST</span><div class="flex items-center gap-space-xs mt-space-xs"><span class="inline-block w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm text-primary uppercase font-semibold">Dispatch Active</span></div></div></div><div class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">emergency</span><div class="flex flex-col"><span class="font-body-sm text-body-sm text-on-surface font-semibold">Emergency Storm &amp; Structural</span><span class="font-body-sm text-body-sm text-on-surface-variant">Rapid crew mobilization NYC</span></div></div></div><div class="flex flex-col gap-space-md"><span class="font-title-lg text-title-lg text-on-surface">Contracting Services</span><nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-body-sm"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="residential-construction" href="#">Full Home Renovations &amp; Extensions</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="commercial-buildouts" href="#">Commercial Interior &amp; Retail Fit-Outs</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="masonry-and-concrete" href="#">Masonry, Brickwork &amp; Concrete</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="roofing-and-waterproofing" href="#">Commercial &amp; Residential Roofing</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="dob-permits-violations" href="#">DOB Violations Removal &amp; Permits</a></nav></div></div><div class="mt-space-xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><p class="font-body-sm text-body-sm text-secondary text-center md:text-left">© 2025 NY Royal Builders Corp. All rights reserved. NYC DCA General Contractor License. EPA Lead-Safe Certified.</p><div class="flex items-center gap-space-md"><a class="font-label-sm text-label-sm text-secondary hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="font-label-sm text-label-sm text-secondary hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="font-label-sm text-label-sm text-secondary hover:text-on-surface transition-colors" data-path="safety-compliance" href="#">OSHA Safety Standards</a></div></div></div></footer>
 
 </body></html>
